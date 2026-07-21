@@ -1,0 +1,15 @@
+{
+  "$comment": "Ges-Talt project settings. The SessionStart hook (GT-63) reinjects the roster-routing discipline so it is a runtime event, not skippable guidance. See CLAUDE.md 'Routing' and agents/ORCHESTRATION.md. No secrets or environment-specific paths belong in this file.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/route_reminder.py"
+          }
+        ]
+      }
+    ]
+  }
+}

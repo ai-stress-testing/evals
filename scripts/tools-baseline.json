@@ -1,0 +1,734 @@
+{
+  "academic/anthropologist": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/codebase-onboarding-engineer": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/geographer": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/historian": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/narratologist": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/psychologist": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "academic/statistician": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "ai/ai-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ai/model-evaluator": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ai/multi-agent-systems-architect": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ai/prompt-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/api-platform-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/backend-architect": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/backend-dev": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/payments-billing-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/realtime-collaboration-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "backend/search-relevance-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/disaster-recovery-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/finops-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/gitops-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/lifecycle-manager": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/orchestration-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/release-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/runtime-security-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "cd/sre": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/code-security-analyst": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/containerization-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/dynamic-security-tester": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/pipeline-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/quality-gate-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "ci/supply-chain-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/ai-data-remediation-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/data-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/database-administrator": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/database-optimizer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/device-intelligence-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "data/evolutionary-data-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/brand-guardian": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/image-prompt-engineer": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/inclusive-visuals-specialist": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/persona-walkthrough": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/technical-writer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/ui-designer": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/ux-architect": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "design/ux-researcher": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/client-telemetry-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/designer": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/desktop-app-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/i18n-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/microanimation-engineer": [
+    "Artifact",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/react-dev": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "frontend/section-508-specialist": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "legal/accessibility-counsel": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "legal/data-protection-officer": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "legal/general-counsel": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "legal/privacy-engineer": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "legal/product-counsel": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "logicians/agent-evaluator": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "logicians/code-reviewer": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "logicians/distributed-systems-verifier": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "logicians/falsifier": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "logicians/logician": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "logicians/software-architect": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "mx/feature-flag-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "mx/mobile-app-builder": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "mx/mobile-release-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "networking/network-automation-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "networking/network-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "networking/network-reliability-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "networking/nginx-specialist": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "pm/delivery-lead": [
+    "Glob",
+    "Grep",
+    "Read",
+    "TaskList",
+    "Write"
+  ],
+  "pm/experiment-tracker": [
+    "Glob",
+    "Grep",
+    "Read",
+    "TaskCreate",
+    "TaskList",
+    "TaskUpdate",
+    "Write"
+  ],
+  "pm/meeting-notes-specialist": [
+    "Read",
+    "Write"
+  ],
+  "pm/program-tracker": [
+    "Glob",
+    "Grep",
+    "Read",
+    "TaskCreate",
+    "TaskList",
+    "TaskUpdate",
+    "Write"
+  ],
+  "pm/project-manager": [
+    "Glob",
+    "Grep",
+    "Read",
+    "TaskCreate",
+    "TaskList",
+    "TaskUpdate",
+    "Write",
+    "mcp__github__issue_read",
+    "mcp__github__issue_write",
+    "mcp__github__sub_issue_write"
+  ],
+  "pm/team-operations": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "pm/ticket-workflow-steward": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/appsec-engineer": [
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/architect": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "security/cloud-security-architect": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/compliance-auditor": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/e2ee-protocol-consultant": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/identity-access-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/ids-ips-architect": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/incident-responder": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/network-detection-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/penetration-tester": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/pq-crypto-consultant": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/rbac-abac-consultant": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/red-team-critic": [
+    "Glob",
+    "Grep",
+    "Read"
+  ],
+  "security/regulated-data-specialist": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/rls-consultant": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/secrets-crypto-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/senior-secops": [
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/side-channel-analyst": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/threat-detection-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "security/threat-intelligence-analyst": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/accessibility-auditor": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/api-tester": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/evidence-collector": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/performance-benchmarker": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/reality-checker": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/test-automation-engineer": [
+    "Bash",
+    "Edit",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/test-results-analyzer": [
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ],
+  "testing/tool-evaluator": [
+    "Bash",
+    "Glob",
+    "Grep",
+    "Read",
+    "Write"
+  ]
+}
