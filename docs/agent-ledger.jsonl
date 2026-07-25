@@ -1,0 +1,12 @@
+{"task": "backend benchmark (issue #2)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 32928, "sprint": "sprint-7-26-21-28"}
+{"task": "frontend benchmark (issue #3)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 49787, "sprint": "sprint-7-26-21-28"}
+{"task": "data benchmark (issue #4)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 46324, "sprint": "sprint-7-26-21-28"}
+{"task": "ai benchmark (issue #5)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 46526, "sprint": "sprint-7-26-21-28"}
+{"task": "ci benchmark (issue #6)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 41935, "sprint": "sprint-7-26-21-28"}
+{"task": "cd benchmark (issue #7)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 44845, "sprint": "sprint-7-26-21-28"}
+{"task": "security benchmark (issue #8)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 42577, "sprint": "sprint-7-26-21-28"}
+{"task": "testing benchmark (issue #9)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 42047, "sprint": "sprint-7-26-21-28"}
+{"task": "networking benchmark (issue #10)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 40879, "sprint": "sprint-7-26-21-28"}
+{"task": "mx benchmark (issue #11)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 43369, "sprint": "sprint-7-26-21-28"}
+{"task": "design benchmark (issue #12)", "role": "ai/model-evaluator", "model": "sonnet", "tokens": 46421, "sprint": "sprint-7-26-21-28"}
+{"task": "falsifier pass on all 11 benchmark checkers", "role": "logicians/falsifier", "model": "opus", "tokens": 131259, "sprint": "sprint-7-26-21-28"}
