@@ -106,6 +106,29 @@ CASES.append({
     "expected": [dict(C1_NO_OP)],
 })
 
+C5_SINGLE_ATTR = {
+    "id": "C5", "name": "Erin", "tier": "silver",
+    "effective_start": "2024-01-01", "effective_end": None, "is_current": True,
+}
+
+CASES.append({
+    "name": "single tracked attribute changes (name only, tier unchanged)",
+    "current_rows": [C5_SINGLE_ATTR],
+    "source_rows": [{"id": "C5", "name": "Erin Smith", "tier": "silver"}],
+    "as_of": "2024-06-01",
+    "tracked_attributes": TRACKED,
+    "expected": [
+        {
+            "id": "C5", "name": "Erin", "tier": "silver",
+            "effective_start": "2024-01-01", "effective_end": "2024-06-01", "is_current": False,
+        },
+        {
+            "id": "C5", "name": "Erin Smith", "tier": "silver",
+            "effective_start": "2024-06-01", "effective_end": None, "is_current": True,
+        },
+    ],
+})
+
 CASES.append({
     "name": "multiple changed attributes in one batch + prior history preserved",
     "current_rows": [C2_HISTORY, C2_CURRENT_BEFORE],

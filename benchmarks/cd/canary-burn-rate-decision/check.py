@@ -88,6 +88,18 @@ CASES = [
         "promote",
     ),
     (
+        "hold: nonzero traffic still below min_total_requests "
+        "(insufficient statistical confidence, not zero-traffic)",
+        dict(REALISTIC, samples=[(50, 50)]),
+        "hold",
+    ),
+    (
+        "promote: total exactly equals min_total_requests (boundary is "
+        "inclusive of proceeding to the burn-rate calculation)",
+        dict(REALISTIC, samples=[(100, 100)]),
+        "promote",
+    ),
+    (
         "rollback: burn rate lands exactly on the rollback threshold",
         dict(SPECIAL, samples=[(4, 8)]),
         "rollback",

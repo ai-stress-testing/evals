@@ -109,6 +109,28 @@ def build_cases(mod):
 
     add("deny overrides allow: identical (role, resource, action)", case_deny_overrides_allow_same_role)
 
+    def case_deny_overrides_allow_same_role_reversed_order():
+        # Same rule pair as above, listed deny-then-allow instead of
+        # allow-then-deny. The decision must not depend on rule-list
+        # order - a last-match-wins implementation would flip this to
+        # "allow" while passing the allow-then-deny ordering above.
+        r = Resolver(
+            {},
+            [
+                Rule("admin", "reports", "read", "deny"),
+                Rule("admin", "reports", "read", "allow"),
+            ],
+        )
+        got = r.decide(["admin"], "reports", "read")
+        assert got == "deny", (
+            f"deny must win regardless of rule-list order; got {got!r}"
+        )
+
+    add(
+        "deny overrides allow: same rule pair, reversed list order",
+        case_deny_overrides_allow_same_role_reversed_order,
+    )
+
     def case_deny_overrides_allow_across_inherited_roles():
         role_parents = {"editor": ["viewer"]}
         rules = [
@@ -125,6 +147,25 @@ def build_cases(mod):
     add(
         "deny overrides allow across inherited roles",
         case_deny_overrides_allow_across_inherited_roles,
+    )
+
+    def case_deny_overrides_allow_across_inherited_roles_reversed_order():
+        # Same setup as above, rule list reversed (deny-then-allow).
+        role_parents = {"editor": ["viewer"]}
+        rules = [
+            Rule("editor", "reports", "read", "deny"),
+            Rule("viewer", "reports", "read", "allow"),
+        ]
+        r = Resolver(role_parents, rules)
+        got = r.decide(["editor"], "reports", "read")
+        assert got == "deny", (
+            f"deny must win regardless of rule-list order, even across "
+            f"inherited roles; got {got!r}"
+        )
+
+    add(
+        "deny overrides allow across inherited roles: reversed list order",
+        case_deny_overrides_allow_across_inherited_roles_reversed_order,
     )
 
     def case_role_inheritance_grants_access():
@@ -211,6 +252,26 @@ def build_cases(mod):
     add(
         "narrow deny overrides broad wildcard allow (flat precedence)",
         case_narrow_deny_overrides_wildcard_allow,
+    )
+
+    def case_narrow_deny_overrides_wildcard_allow_reversed_order():
+        # Same rule pair as above, listed deny-then-allow.
+        r = Resolver(
+            {},
+            [
+                Rule("intern", "payroll", "read", "deny"),
+                Rule("intern", "*", "*", "allow"),
+            ],
+        )
+        assert r.decide(["intern"], "payroll", "read") == "deny", (
+            "a narrow explicit deny must override a broad wildcard allow "
+            "regardless of which one is listed first"
+        )
+        assert r.decide(["intern"], "docs", "read") == "allow"
+
+    add(
+        "narrow deny overrides broad wildcard allow: reversed list order",
+        case_narrow_deny_overrides_wildcard_allow_reversed_order,
     )
 
     def case_unknown_role_denies():

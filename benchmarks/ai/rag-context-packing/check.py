@@ -16,6 +16,7 @@ Exits 0 if every case passes, exits 1 (non-zero) if any case fails.
 """
 from __future__ import annotations
 
+import copy
 import importlib.util
 import itertools
 import sys
@@ -136,12 +137,21 @@ CASES = [
 
 
 def run_case(pack_context, case: dict) -> tuple:
-    chunks = case["chunks"]
     budget = case["budget"]
-    valid_ids = {c["id"] for c in chunks}
 
+    # Compute the ground truth (valid ids, per-id lookup, brute-force
+    # optimum) from a snapshot taken BEFORE the solution runs, over a
+    # copy the solution never sees. A solution that mutates its `chunks`
+    # argument (or the dicts inside it) as a side effect must not be able
+    # to corrupt the oracle it's graded against.
+    baseline_chunks = copy.deepcopy(case["chunks"])
+    valid_ids = {c["id"] for c in baseline_chunks}
+    by_id = {c["id"]: c for c in baseline_chunks}
+    optimal_score = brute_force_optimal_score(baseline_chunks, budget)
+
+    solution_chunks = copy.deepcopy(case["chunks"])
     try:
-        result = pack_context(case["query"], chunks, budget)
+        result = pack_context(case["query"], solution_chunks, budget)
     except Exception as exc:  # noqa: BLE001 - want to report any failure
         return False, f"raised {type(exc).__name__}: {exc}"
 
@@ -155,7 +165,6 @@ def run_case(pack_context, case: dict) -> tuple:
     if unknown:
         return False, f"returned ids not present in input chunks: {unknown}"
 
-    by_id = {c["id"]: c for c in chunks}
     total_tokens = sum(by_id[rid]["tokens"] for rid in result)
     if total_tokens > budget:
         return False, (
@@ -164,7 +173,6 @@ def run_case(pack_context, case: dict) -> tuple:
         )
 
     total_score = sum(by_id[rid]["score"] for rid in result)
-    optimal_score = brute_force_optimal_score(chunks, budget)
 
     if abs(total_score - optimal_score) > 1e-9:
         return False, (
